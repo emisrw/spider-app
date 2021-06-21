@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//https://medium.com/imaginelearning/building-a-react-application-ec8cbf6b8694
+
+import React from "react";
+import Button from "./components/Button/Button";
 
 function App() {
   return (
-    <div className="App text-center">
-      <header className="App-header bg-gray-900 flex flex-col items-center justify-center text-white">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container mx-auto">
+      <h1 className="text-5xl">Spider</h1>
+      <div className="py-10">
+        <Button onClick={() => alert("Hello world!")} text="OK" />
+      </div>
     </div>
   );
 }
